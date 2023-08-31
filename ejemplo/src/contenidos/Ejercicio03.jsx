@@ -12,7 +12,8 @@ export default function Ejercicio03() {
 
     return (
         <div>
-            <table class="table">
+            <h1>Ejercicio 3</h1>
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>

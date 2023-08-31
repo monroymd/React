@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import Imagen from './Imagen.jsx'
+import React, { useEffect, useState, useRef } from 'react'
+import Imagen2 from './Imagen.jsx'
 import { obtenerApi } from '../servicio/Servicio'
-import Foto from './Foto.jsx'
+import Foto2 from './Foto.jsx'
 
-
-export default function Ejercicio04() {
-
-
+export default function Ejercicio05() {
     const [usuarios, setUsuarios] = useState([])
+    const imgRef = useRef(null)
 
     useEffect(() => {
         obtenerApi().then(data =>
@@ -16,8 +14,8 @@ export default function Ejercicio04() {
 
     return (
         <>
-            <h1>Ejercicio 4</h1>
-            <Foto />
+            <h1>Ejercicio 5</h1>
+            <Foto2 imgRef={imgRef} />
             <div>
                 <table className="table">
                     <thead>
@@ -29,7 +27,7 @@ export default function Ejercicio04() {
                         </tr>
                     </thead>
                     <tbody>
-                        {usuarios.map(usuario => <Imagen key={usuario.id} usuario={usuario} />)}
+                        {usuarios.map(usuario => <Imagen2 key={usuario.id} usuario={usuario} imgRef={imgRef} />)}
                     </tbody>
                 </table>
 

@@ -8,7 +8,7 @@ const Contar = () => {
   }
 
   return (
-    <button type="button" class="btn btn-warning" onClick={Num}>Contador = {contador}</button>
+    <button type="button" className="btn btn-warning" onClick={Num}>Contador = {contador}</button>
 
   )
 }

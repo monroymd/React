@@ -15,6 +15,7 @@ const Main = () => {
 
     return (
         <div>
+            <h1>Ejercicio 2</h1>
             <Hijo nombre={nombres[cambio]} />
             <button onClick={cambioDeNombre} >Cambiar nombre</button>
         </div>

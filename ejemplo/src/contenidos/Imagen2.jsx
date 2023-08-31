@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { obtenerImagen } from '../servicio/ServicioRYM'
 
-export default function Usuario({ usuario }) {
+export default function Usuario2({ usuario, imgRef }) {
     const [imagenLocal, setImagenLocal] = useState()
 
     useEffect(() => {
@@ -10,13 +10,13 @@ export default function Usuario({ usuario }) {
     }, [mostrarImagen])
 
     function mostrarImagen() {
-        let foto = document.getElementById("foto")
-        foto.src = imagenLocal
+        if (imgRef.current) {
+            imgRef.current.src = imagenLocal
+        }
     }
 
     return (
         <>
-
             <tr>
 
                 <th scope="row">{usuario.id}</th>

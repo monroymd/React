@@ -8,8 +8,10 @@ const Contar = () => {
     }
 
     return (
-        <button type="button" class="btn btn-warning" onClick={Num}>Contador = {contador}</button>
-
+        <>
+            <h1>Ejercicio 1</h1>
+            <button type="button" className="btn btn-warning" onClick={Num}>Contador = {contador}</button>
+        </>
     )
 }
 

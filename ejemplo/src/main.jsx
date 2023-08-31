@@ -7,6 +7,7 @@ import Inicio from './contenidos/Inicio.jsx'
 import Main from './contenidos/Main.jsx'
 import Ejercicio03 from './contenidos/Ejercicio03.jsx'
 import Ejercicio04 from './contenidos/Ejercicio04.jsx'
+import Ejercicio05 from './contenidos/Ejercicio05.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/ejercicio02' element={<Main />} />
         <Route path='/ejercicio03' element={<Ejercicio03 />} />
         <Route path='/ejercicio04' element={<Ejercicio04 />} />
+        <Route path='/ejercicio05' element={<Ejercicio05 />} />
         <Route path='/' element={<Inicio />} />
       </Routes>
       <Footer />
